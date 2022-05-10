@@ -1,0 +1,19 @@
+{
+  "defaultEnv":{"ENV":"ENV"},
+    "dev": {
+      "driver": "pg",
+      "host": "localhost",
+      "database": {"ENV":"PGDATABASE"},
+      "user": {"ENV":"PGUSER"},
+      "password": {"ENV":"PGPASSWORD"},
+      "port":{"ENV":"PGPORT"}
+    },
+    "test": {
+      "driver": "pg",
+      "host": "localhost",
+      "database":  {"ENV":"PGDATABASETEST"},
+      "user": {"ENV":"PGUSER"},
+      "password": {"ENV":"PGPASSWORD"},
+      "port":{"ENV":"PGPORT"}
+    }
+  }
